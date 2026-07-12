@@ -10,26 +10,26 @@
 <body>
    <form id="register" method="GET" >
     <label for="name" >First name</label>
-    <input type="text" id="name" placeholder="First name">
+    <input type="text" id="name" placeholder="First name" required>
     &nbsp;
     <label for="sn" > Second name </label>
-    <input type="text" id="sn" placeholder="second name"/>
+    <input type="text" id="sn" placeholder="second name" required/>
   <br>
 <label for="ls">Last Name</label>
-<input id="ls" type="text" placeholder="last name"/>
+<input id="ls" type="text" placeholder="last name" required>
 &nbsp;
 <label for="ps">Password</label>
-<input id="ps" type="password" autocomplete="current-password" placeholder="password"/>
+<input id="ps" type="password" autocomplete="current-password" placeholder="password" required/>
 <br><br>
 
 <label for="dbirth">Date of birth</label>
-<input type="date" id="dbirth"/><br><br>
+<input type="date" id="dbirth" required/><br><br>
 <label>Gender:</label>
 <label for="male" class="male">Male
-<input type="radio" id="male" name="gender">
+<input type="radio" id="male" name="gender" required/>
 </label>
 <label for="female" class="female">Female
-<input type="radio" id="female" name="gender">  
+<input type="radio" id="female" name="gender" required/>  
 </label>
 
 
