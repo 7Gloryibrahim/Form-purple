@@ -41,9 +41,22 @@ if(myPasswordPattern.test(passValue)){
   messageValue.style.backgroundColor ="red"
 }
 
-
-
 } ) ;
+
+const passwordEye = document.getElementById("openedeye")
+passwordEye.addEventListener("click",function(){
+  if(password.type === "password"){
+
+        password.type = "text";
+        passwordEye.classList.replace("bi-eye-slash-fill", "bi-eye-fill");
+
+    }else{
+
+        password.type = "password";
+        passwordEye.classList.replace("bi-eye-fill", "bi-eye-slash-fill");
+}
+
+});
 
    
 
