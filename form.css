@@ -97,6 +97,12 @@ button{
     background-color: purple;
 }
 
+.bi{
+    color: rgb(253, 228, 253);
+    font-size: large;
+    padding: 10px;
+}
+
 @media (max-width: 640px) {
     body{
         background: linear-gradient(to bottom,purple,pink  );
