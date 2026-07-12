@@ -22,9 +22,28 @@ Second Name: ${userData.secondN} <br>
 Last Name: ${userData.lastN}
 `;
 
+
 }); // Prevent form submission
 
-  
+  const password = document.getElementById("ps")
+const messageValue = document.getElementById("passwordrequirement")
+
+password.addEventListener("input", function(event) {
+
+const passValue = password.value;
+const myPasswordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,16}$/;
+
+if(myPasswordPattern.test(passValue)){
+  messageValue.textContent = "Strong password"
+  messageValue.style.backgroundColor = "green"
+}else{
+  messageValue.textContent ="Password must contain 8-16 characters, an uppercase letter, a lowercase letter and a number.";
+  messageValue.style.backgroundColor ="red"
+}
+
+
+
+} ) ;
 
    
 
