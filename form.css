@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{ 
+    height: 100vh;
+    background: linear-gradient(to right,purple,pink  );
+     margin-top: 10rem;
+ margin-left: 18rem;
+
+}
+
+form{
+  
+border: 1px solid pink;
+border-radius: 10px;
+box-shadow: unset;
+box-shadow: rgb(233, 157, 0);
+width: 50rem;
+height: full;
+padding:  50px 10px ;
+text-align: center;
+background:rgba(0,0,0,0.2);
+}
+
+input{
+    height: 40px;
+    width: 15rem;
+  border-radius: 8px;
+  outline: none;
+  text-align: center;
+}
+::placeholder{
+   padding: 10px;
+}
+
+input[type="date"]{
+    background-color: linear-gradient(to top, purple, pink);
+    color: purple;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 10px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+    background-color: purple;
+    padding: 10px  ;
+    margin-right: 10px;
+    color: white;
+    border-radius: 50%;
+}
+
+#ls{
+    margin-top: 20px;
+}
+
+.dbirth{
+padding-left: 50px;
+}
+
+.male{
+    width: 15px;
+    display :flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 22rem;
+}
+.female{
+    width: 15px;
+    display :flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 22rem;
+}
+label {
+    color:rgb(233, 157, 233);
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px auto ;
+    border-radius: 20px;
+    border-color: aliceblue;
+    outline: none;
+    height: 40px;
+    width: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    background-color: purple;
+}
+
+@media (max-width: 640px) {
+    body{
+        background: linear-gradient(to bottom,purple,pink  );
+        margin-top: 5rem;
+      object-position: relative;
+    }
+    form{
+        margin-top: 5rem;
+     
+        margin-left: 2rem;
+       object-position: absolute;
+       transform: translate( -90%);
+      width: 20rem;
+        padding: 20px 10px;
+    }
+    input{
+        width: 10rem;
+        margin-bottom: 2rem;
+        border:none;
+    }
+    label {
+        font-size: 16px;
+       
+    }
+
+    .male{
+    width: 18px;
+    display :flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 10rem;
+}
+
+.female{
+    width: 18px;
+    display :flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 9rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+margin-right: 4px;
+
+padding: 2px  ;
+}
+
+input[type="date"]{
+    padding: 10px;   
+}
+}   

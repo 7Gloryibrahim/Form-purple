@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+
+</head>
+<body>
+   <form id="register" method="GET" >
+    <label for="name" >First name</label>
+    <input type="text" id="name" placeholder="First name">
+    &nbsp;
+    <label for="sn" > Second name </label>
+    <input type="text" id="sn" placeholder="second name"/>
+  <br>
+<label for="ls">Last Name</label>
+<input id="ls" type="text" placeholder="last name"/>
+&nbsp;
+<label for="ps">Password</label>
+<input id="ps" type="password" autocomplete="current-password" placeholder="password"/>
+<br><br>
+
+<label for="dbirth">Date of birth</label>
+<input type="date" id="dbirth"/><br><br>
+<label>Gender:</label>
+<label for="male" class="male">Male
+<input type="radio" id="male" name="gender">
+</label>
+<label for="female" class="female">Female
+<input type="radio" id="female" name="gender">  
+</label>
+
+
+<button class="submit">Submit</button>&nbsp;
+<span><button type="reset" class="reset">Reset</button></span>
+</form>
+
+<div></div>
+<script src="form.js"></script>
+</body>
+</html>
+<!-- to make it a pair a it use the id -->
+
