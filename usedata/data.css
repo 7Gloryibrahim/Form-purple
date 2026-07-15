@@ -29,6 +29,7 @@ color:white;
 
 @media (max-width : 640px){
     .profile{
-        left: 15%;
+        left: 9%;
+        right: 9%;
     }
 }
