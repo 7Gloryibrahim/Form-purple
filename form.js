@@ -2,7 +2,7 @@ const form = document.getElementById("register");
 form.addEventListener("submit", function (event) {
   event.preventDefault()
 
-  let firstN = document.getElementById("name").value.trim();
+  let firstN = document.getElementById("fn").value.trim();
 let secondN= document.getElementById("sn").value.trim();
 let lastN = document.getElementById("ls").value.trim();
 
@@ -14,13 +14,30 @@ console.log("First name:", firstN )
 console.log("Second name:", secondN )
 console.log("Last name:", lastN )
 
-const userData = JSON.parse(localStorage.getItem("userDetails"));
+const userData = {
+  firstN,
+  secondN,
+  lastN,
+}
+localStorage.setItem("userDetails", JSON.stringify(userData));
+console.log(userData);
+let submitMessage = document.getElementById("submitmessage")
 
-document.getElementById("display").innerHTML = `
-First Name: ${userData.firstN} <br>
-Second Name: ${userData.secondN} <br>
-Last Name: ${userData.lastN}
-`;
+submitMessage.textContent = "Registration submitted successfully!"
+submitMessage.backgroundColor = "green"
+submitMessage.color = "white"
+
+
+window.location.href = "usedata/index.html";
+
+
+
+
+
+
+
+
+
 
 
 }); // Prevent form submission
@@ -39,6 +56,7 @@ if(myPasswordPattern.test(passValue)){
 }else{
   messageValue.textContent ="Password must contain 8-16 characters, an uppercase letter, a lowercase letter and a number.";
   messageValue.style.backgroundColor ="red"
+
 }
 
 } ) ;
@@ -58,7 +76,27 @@ passwordEye.addEventListener("click",function(){
 
 });
 
-   
+//    form.addEventListener("submit", function (event) {
+//     event.preventDefault();
+
+//     // Get all the values
+
+//     // Check the password pattern
+
+//     if (passwordIsValid) {
+
+//         // Show success message
+
+//         // Save the data
+
+//         // Redirect if you want
+
+//     } else {
+
+//         // Show password error
+
+//     }
+// });
 
 // const reset = document.querySelector(".reset");
   // reset.addEventListener("click", function(event) {

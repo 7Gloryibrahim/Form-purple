@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="data.css">
+</head>
+<body>
+    <!-- <div id="userdetails"> -->
+   <p id="fn">First name :</p>
+   <p id="sn">Second name :</p>
+   <p id="ls">Last name :</p>
+<!-- </div> -->
+<script>
+  
+
+const userData = JSON.parse(localStorage.getItem("userDetails"))
+
+document.getElementById("fn").textContent = "First name :" + userData.firstN
+document.getElementById("sn").textContent = "Second name :" + userData.secondN
+document.getElementById("ls").textContent = "Last name :" + userData.lastN
+
+</script>
+
+</body>
+</html>
