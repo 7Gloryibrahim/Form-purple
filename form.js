@@ -1,14 +1,14 @@
 const form = document.getElementById("register");
 form.addEventListener("submit", function (event) {
   event.preventDefault()
-
+ alert("Details submitted successfully!🎉") 
   let firstN = document.getElementById("fn").value.trim();
 let secondN= document.getElementById("sn").value.trim();
 let lastN = document.getElementById("ls").value.trim();
 
 
  firstN ==="" ?  alert("PLEASE ENTER YOUR FIRST NAME") : firstN;
-
+ 
 
 console.log("First name:", firstN )
 console.log("Second name:", secondN )
@@ -20,14 +20,6 @@ const userData = {
   lastN,
 }
 localStorage.setItem("userDetails", JSON.stringify(userData));
-console.log(userData);
-let submitMessage = document.getElementById("submitmessage")
-
-submitMessage.textContent = "Registration submitted successfully!"
-submitMessage.backgroundColor = "green"
-submitMessage.color = "white"
-
-
 window.location.href = "usedata/index.html";
 
 
